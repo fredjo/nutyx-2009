@@ -1897,6 +1897,11 @@ drwxr-xr-x	root/root	opt/kde/lib/kde4/plugins/imageformats/
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/plugins/imageformats/kimg_tga.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/plugins/imageformats/kimg_xcf.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/plugins/imageformats/kimg_xview.so
+drwxr-xr-x	root/root	opt/kde/lib/kde4/plugins/kauth/
+drwxr-xr-x	root/root	opt/kde/lib/kde4/plugins/kauth/backend/
+-rwxr-xr-x	root/root	opt/kde/lib/kde4/plugins/kauth/backend/kauth_backend_plugin.so
+drwxr-xr-x	root/root	opt/kde/lib/kde4/plugins/kauth/helper/
+-rwxr-xr-x	root/root	opt/kde/lib/kde4/plugins/kauth/helper/kauth_helper_plugin.so
 drwxr-xr-x	root/root	opt/kde/lib/kde4/plugins/script/
 lrwxrwxrwx	root/root	opt/kde/lib/kde4/plugins/script/libkrossqtsplugin.so -> libkrossqtsplugin.so.4
 lrwxrwxrwx	root/root	opt/kde/lib/kde4/plugins/script/libkrossqtsplugin.so.4 -> libkrossqtsplugin.so.4.4.0
@@ -4133,6 +4138,7 @@ drwxr-xr-x	root/root	opt/kde/share/config/colors/
 -rw-r--r--	root/root	opt/kde/share/config/colors/Royal.colors
 -rw-r--r--	root/root	opt/kde/share/config/colors/Web.colors
 -rw-r--r--	root/root	opt/kde/share/config/katemoderc
+-rw-r--r--	root/root	opt/kde/share/config/katepartpluginsrc
 -rw-r--r--	root/root	opt/kde/share/config/kdebug.areas
 -rw-r--r--	root/root	opt/kde/share/config/kdebugrc
 -rw-r--r--	root/root	opt/kde/share/config/ksslcalist

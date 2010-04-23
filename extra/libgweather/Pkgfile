@@ -2,15 +2,22 @@
 # URL: http://www.gnome.org
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: gnome-vfs, libsoup, intltool, libgnome-keyring
+# Depends on: gnome-vfs, libsoup, intltool, libgnome-keyring, gtk-doc
 
 name=libgweather
 version=2.30.0
 release=1
-source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.bz2)
+source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.bz2\
+	01_gettext_not_xml.patch)
 
 build() {
 	cd $name-$version
+	patch -Np1 -i ../01_gettext_not_xml.patch
+	libtoolize --force
+	gtkdocize
+	aclocal
+	autoconf
+	automake
 	./configure --prefix=$GNOME_PREFIX \
 		--sysconfdir=/etc \
 		--localstatedir=/var/lib \
